@@ -23,7 +23,7 @@ export function Header() {
             <MapPin size={20} weight="fill" />
             Tres Rios
           </HeaderButton>
-          <NavLink to="/completeOrder">
+          <NavLink to="">
             <HeaderButton variant="yellow">
               {cartQuantity >= 1 && <span>{cartQuantity}</span>}
               <ShoppingCart size={20} weight="fill" />

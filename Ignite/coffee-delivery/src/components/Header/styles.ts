@@ -10,7 +10,6 @@ export const HeaderContainer = styled.header`
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 5;
 
   > div {
     width: 100%;

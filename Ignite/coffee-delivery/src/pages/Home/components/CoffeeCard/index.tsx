@@ -1,5 +1,4 @@
 import { QuantityInput } from "../../../../components/QuantityInput";
-import { RegularText, TitleText } from "../../../../components/Typography";
 import {
   CoffeeCardContainer,
   Tags,
@@ -11,7 +10,6 @@ import {
 import { ShoppingCart } from "phosphor-react";
 import { useState } from "react";
 import { useCart } from "../../../../hooks/useCart";
-import { formatMoney } from "../../../../utils/formatMoney";
 
 export interface Coffee {
   id: number;
@@ -47,8 +45,6 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
     addCoffeeToCart(coffeeToAdd);
   }
 
-  const formattedPrice = formatMoney(coffee.price);
-
   return (
     <CoffeeCardContainer>
       <img src={`/coffees/${coffee.photo}`} />
@@ -63,10 +59,7 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
 
       <CardFooter>
         <div>
-          <RegularText size="s">R$</RegularText>
-          <TitleText size="m" color="text" as="strong">
-            {formattedPrice}
-          </TitleText>
+          <span>R$ 2</span>
         </div>
 
         <AddCartWrapper>

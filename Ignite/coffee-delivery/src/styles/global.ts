@@ -38,16 +38,4 @@ export const GlobalStyle = createGlobalStyle`
     -moz-appearance: textfield;
   }
 
-  ::-webkit-scrollbar {
-    width: 0.4rem;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: ${({ theme }) => theme.colors["base-button"]}
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border-radius: 2rem;
-    background: ${({ theme }) => theme.colors["brand-purple"]}
-  }
 `;
